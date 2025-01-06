@@ -1,0 +1,102 @@
+{
+  "uuid": "07dbfc5c-6a30-4604-8c0a-d4d399f1f128",
+  "lastMigration": 33,
+  "name": "Rainapi",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3000,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "ca7e338d-5fae-43b1-88aa-43ee7feda5b1",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "weather",
+      "responses": [
+        {
+          "uuid": "a0b76a57-33e0-45c3-a502-41ac4b587dec",
+          "body": "{\r\n  \"data\": [\r\n    {\r\n      \"time\": \"2025-01-05T10:00:00\",\r\n      \"rainfall\": 5.0,\r\n      \"soilMoisture\": 35.0\r\n    }\r\n  ]\r\n}\r\n",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "ca7e338d-5fae-43b1-88aa-43ee7feda5b1"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [
+    {
+      "uuid": "22d64c30-ddd5-4f18-959e-3a3be821ed1a",
+      "id": "l0gn",
+      "name": "rain data",
+      "documentation": "",
+      "value": "[\n]"
+    }
+  ],
+  "callbacks": []
+}
